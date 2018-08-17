@@ -16,6 +16,15 @@
 
 		text-align: center;
 		cursor: pointer;
+
+		@include respond(tab-port) {
+			top: 4rem;
+			right: 4rem;
+		}
+		@include respond(phone) {
+			top: 2.5rem;
+			right: 2.5rem;
+		}
 	}
 
 	&__background {
@@ -30,7 +39,15 @@
 
 		transition: transform 0.8s;
 
-		//transform: scale(90);
+		@include respond(tab-port) {
+			top: 4.5rem;
+			right: 4.5rem;
+		}
+
+		@include respond(phone) {
+			top: 3rem;
+			right: 3rem;
+		}
 	}
 
 	&__nav {
